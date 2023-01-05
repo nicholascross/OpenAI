@@ -11,6 +11,15 @@
 		D14E623429676FD500300FF1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14E623329676FD500300FF1 /* ContentView.swift */; };
 		D14E623629676FD600300FF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D14E623529676FD600300FF1 /* Assets.xcassets */; };
 		D14E623929676FD600300FF1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D14E623829676FD600300FF1 /* Preview Assets.xcassets */; };
+		D14E62412967718600300FF1 /* GPTView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14E62402967718600300FF1 /* GPTView.swift */; };
+		D14E6244296771C100300FF1 /* OpenAISwift in Frameworks */ = {isa = PBXBuildFile; productRef = D14E6243296771C100300FF1 /* OpenAISwift */; };
+		D14E6246296778BC00300FF1 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14E6245296778BC00300FF1 /* Auth.swift */; };
+		D14E62482967852200300FF1 /* TextPromptInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14E62472967852200300FF1 /* TextPromptInputView.swift */; };
+		D14E624A2967854C00300FF1 /* ModelSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14E62492967854C00300FF1 /* ModelSelectionView.swift */; };
+		D14E624C2967857E00300FF1 /* SendCompletionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14E624B2967857E00300FF1 /* SendCompletionButtonView.swift */; };
+		D14E624E296785AA00300FF1 /* ResponseDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14E624D296785AA00300FF1 /* ResponseDisplayView.swift */; };
+		D14E6250296789CB00300FF1 /* MaxTokensSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14E624F296789CB00300FF1 /* MaxTokensSelectionView.swift */; };
+		D14E625229678ADC00300FF1 /* OpenAIModelType+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14E625129678ADC00300FF1 /* OpenAIModelType+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +29,14 @@
 		D14E623529676FD600300FF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D14E623829676FD600300FF1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D14E623A29676FD600300FF1 /* OpenAI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OpenAI.entitlements; sourceTree = "<group>"; };
+		D14E62402967718600300FF1 /* GPTView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPTView.swift; sourceTree = "<group>"; };
+		D14E6245296778BC00300FF1 /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
+		D14E62472967852200300FF1 /* TextPromptInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextPromptInputView.swift; sourceTree = "<group>"; };
+		D14E62492967854C00300FF1 /* ModelSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelSelectionView.swift; sourceTree = "<group>"; };
+		D14E624B2967857E00300FF1 /* SendCompletionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendCompletionButtonView.swift; sourceTree = "<group>"; };
+		D14E624D296785AA00300FF1 /* ResponseDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseDisplayView.swift; sourceTree = "<group>"; };
+		D14E624F296789CB00300FF1 /* MaxTokensSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxTokensSelectionView.swift; sourceTree = "<group>"; };
+		D14E625129678ADC00300FF1 /* OpenAIModelType+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OpenAIModelType+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D14E6244296771C100300FF1 /* OpenAISwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,11 +70,13 @@
 		D14E623029676FD500300FF1 /* OpenAI */ = {
 			isa = PBXGroup;
 			children = (
+				D14E6253296794AA00300FF1 /* GPT */,
 				D14E623129676FD500300FF1 /* OpenAIApp.swift */,
 				D14E623329676FD500300FF1 /* ContentView.swift */,
 				D14E623529676FD600300FF1 /* Assets.xcassets */,
 				D14E623A29676FD600300FF1 /* OpenAI.entitlements */,
 				D14E623729676FD600300FF1 /* Preview Content */,
+				D14E6245296778BC00300FF1 /* Auth.swift */,
 			);
 			path = OpenAI;
 			sourceTree = "<group>";
@@ -67,6 +87,28 @@
 				D14E623829676FD600300FF1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D14E6253296794AA00300FF1 /* GPT */ = {
+			isa = PBXGroup;
+			children = (
+				D14E625129678ADC00300FF1 /* OpenAIModelType+Extensions.swift */,
+				D14E6254296794EF00300FF1 /* Views */,
+			);
+			path = GPT;
+			sourceTree = "<group>";
+		};
+		D14E6254296794EF00300FF1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D14E624F296789CB00300FF1 /* MaxTokensSelectionView.swift */,
+				D14E624D296785AA00300FF1 /* ResponseDisplayView.swift */,
+				D14E624B2967857E00300FF1 /* SendCompletionButtonView.swift */,
+				D14E62492967854C00300FF1 /* ModelSelectionView.swift */,
+				D14E62472967852200300FF1 /* TextPromptInputView.swift */,
+				D14E62402967718600300FF1 /* GPTView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +127,9 @@
 			dependencies = (
 			);
 			name = OpenAI;
+			packageProductDependencies = (
+				D14E6243296771C100300FF1 /* OpenAISwift */,
+			);
 			productName = OpenAI;
 			productReference = D14E622E29676FD500300FF1 /* OpenAI.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +158,9 @@
 				Base,
 			);
 			mainGroup = D14E622529676FD500300FF1;
+			packageReferences = (
+				D14E6242296771C100300FF1 /* XCRemoteSwiftPackageReference "OpenAISwift" */,
+			);
 			productRefGroup = D14E622F29676FD500300FF1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,8 +187,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D14E625229678ADC00300FF1 /* OpenAIModelType+Extensions.swift in Sources */,
+				D14E62482967852200300FF1 /* TextPromptInputView.swift in Sources */,
+				D14E62412967718600300FF1 /* GPTView.swift in Sources */,
 				D14E623429676FD500300FF1 /* ContentView.swift in Sources */,
 				D14E623229676FD500300FF1 /* OpenAIApp.swift in Sources */,
+				D14E6250296789CB00300FF1 /* MaxTokensSelectionView.swift in Sources */,
+				D14E624E296785AA00300FF1 /* ResponseDisplayView.swift in Sources */,
+				D14E624C2967857E00300FF1 /* SendCompletionButtonView.swift in Sources */,
+				D14E6246296778BC00300FF1 /* Auth.swift in Sources */,
+				D14E624A2967854C00300FF1 /* ModelSelectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,6 +388,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D14E6242296771C100300FF1 /* XCRemoteSwiftPackageReference "OpenAISwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adamrushy/OpenAISwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D14E6243296771C100300FF1 /* OpenAISwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D14E6242296771C100300FF1 /* XCRemoteSwiftPackageReference "OpenAISwift" */;
+			productName = OpenAISwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D14E622629676FD500300FF1 /* Project object */;
 }
