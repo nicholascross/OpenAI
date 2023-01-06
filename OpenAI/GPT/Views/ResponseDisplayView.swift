@@ -14,7 +14,10 @@ struct ResponseDisplayView: View {
                     .frame(minHeight: 100)
                     .lineLimit(nil)
                     .padding()
+                    .multilineTextAlignment(.leading)
             }.frame(maxWidth: .infinity)
+                .background(.gray)
+                .cornerRadius(10)
         }
     }
 }

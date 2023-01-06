@@ -16,7 +16,6 @@
 		D14E6246296778BC00300FF1 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14E6245296778BC00300FF1 /* Auth.swift */; };
 		D14E62482967852200300FF1 /* TextPromptInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14E62472967852200300FF1 /* TextPromptInputView.swift */; };
 		D14E624A2967854C00300FF1 /* ModelSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14E62492967854C00300FF1 /* ModelSelectionView.swift */; };
-		D14E624C2967857E00300FF1 /* SendCompletionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14E624B2967857E00300FF1 /* SendCompletionButtonView.swift */; };
 		D14E624E296785AA00300FF1 /* ResponseDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14E624D296785AA00300FF1 /* ResponseDisplayView.swift */; };
 		D14E6250296789CB00300FF1 /* MaxTokensSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14E624F296789CB00300FF1 /* MaxTokensSelectionView.swift */; };
 		D14E625229678ADC00300FF1 /* OpenAIModelType+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14E625129678ADC00300FF1 /* OpenAIModelType+Extensions.swift */; };
@@ -33,7 +32,6 @@
 		D14E6245296778BC00300FF1 /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
 		D14E62472967852200300FF1 /* TextPromptInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextPromptInputView.swift; sourceTree = "<group>"; };
 		D14E62492967854C00300FF1 /* ModelSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelSelectionView.swift; sourceTree = "<group>"; };
-		D14E624B2967857E00300FF1 /* SendCompletionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendCompletionButtonView.swift; sourceTree = "<group>"; };
 		D14E624D296785AA00300FF1 /* ResponseDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseDisplayView.swift; sourceTree = "<group>"; };
 		D14E624F296789CB00300FF1 /* MaxTokensSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxTokensSelectionView.swift; sourceTree = "<group>"; };
 		D14E625129678ADC00300FF1 /* OpenAIModelType+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OpenAIModelType+Extensions.swift"; sourceTree = "<group>"; };
@@ -103,7 +101,6 @@
 			children = (
 				D14E624F296789CB00300FF1 /* MaxTokensSelectionView.swift */,
 				D14E624D296785AA00300FF1 /* ResponseDisplayView.swift */,
-				D14E624B2967857E00300FF1 /* SendCompletionButtonView.swift */,
 				D14E62492967854C00300FF1 /* ModelSelectionView.swift */,
 				D14E62472967852200300FF1 /* TextPromptInputView.swift */,
 				D14E62402967718600300FF1 /* GPTView.swift */,
@@ -194,7 +191,6 @@
 				D14E623229676FD500300FF1 /* OpenAIApp.swift in Sources */,
 				D14E6250296789CB00300FF1 /* MaxTokensSelectionView.swift in Sources */,
 				D14E624E296785AA00300FF1 /* ResponseDisplayView.swift in Sources */,
-				D14E624C2967857E00300FF1 /* SendCompletionButtonView.swift in Sources */,
 				D14E6246296778BC00300FF1 /* Auth.swift in Sources */,
 				D14E624A2967854C00300FF1 /* ModelSelectionView.swift in Sources */,
 			);
